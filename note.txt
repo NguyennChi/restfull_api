@@ -1,0 +1,28 @@
+Quản lý admin (BACKEND)
+    - AMIN CRUD: TRONG HỌC PHẦN
+    - XÂY DỰNG API
+
+        Quản lí tài khoản: (Auth) : https://shop.vn/
+
+        Xây dựng danh mục sản phẩm: (category)
+            - Hiển thị: 
+                + Tất cả các danh mục: https://shop.vn/api/v1/category                                                  ---> done
+                + Tất cả những sản phẩm: https://shop.vn/api/v1/category/all                                            ---> done
+                + Tất cả những sản phẩm thuộc danh mục: https://shop.vn/api/v1/category/1 (1--> id của 1 danh mục )    ---> done
+                + Các sản phẩm nổi bậc: https://shop.vn/api/v1/category/all?special=true,limit=5 ///
+
+            Lọc(giá,yêu thích, thuộc tính = màu sắc...)
+                + Lọc theo giá sản phẩm: https://shop.vn/api/v1/category/all(id)?price[in]=[a,b]                            --> done
+                + Lọc theo giá màu sắc : https://shop.vn/api/v1/category/all(id)?color = red                                --> done
+                + Lọc theo giá thương hiệu: https://shop.vn/api/v1/category/all(id)?brand = ATMAN                           --> done
+                + Lọc theo giá size: https://shop.vn/api/v1/category/all(id)?size = l,m                                     --> done
+            Sắp xếp (giá, yêu thích)
+                + Theo giá từ thấp đến cao: https://shop.vn/api/v1/category/all(id)?sort= -price                             --> done
+                + Theo giá từ thấp đến cao: https://shop.vn/api/v1/category/all(id)?sort= price                              --> done
+                + Theo sản phẩm yêu thích:https://shop.vn/api/v1/category/all(id)?sort= like                                --> done
+        Sản phẩm: (Product)
+            -Chi tiết sản phẩm:  https://shop.vn/api/v1/product/id                               --> done
+            - yêu thích: https://shop.vn/api/v1/product/event/like/id                               --> done
+Quản lý giao diện (FRONTEND)
+    - XÂY DỰNG GIAO DIỆN -> HTML/CSS/SASS --> REACT,VUE... --> NEXTJS
+    -GỌI API
